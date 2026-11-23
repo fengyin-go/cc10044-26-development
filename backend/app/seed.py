@@ -252,5 +252,9 @@ SEED_ROWS: dict[str, list[dict[str, Any]]] = {
          "任务名称": "Hive_to_HMS_legacy_sync", "源Catalog": "hive_metastore_legacy",
          "目标Catalog": "hms_production", "同步范围": "全部",
          "同步状态": "失败-Schema冲突2处"},
+        {"id": 4, "status": "已同步", "pending": False, "abnormal": False,
+         "任务名称": "catalog_alpha_order_fact_V4_sync", "源Catalog": "order_source_catalog",
+         "目标Catalog": "catalog_alpha", "同步范围": "order_fact@V4",
+         "同步状态": "已完成"},
     ],
 }
